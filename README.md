@@ -1,4 +1,2 @@
-# bcv
-cotiaciones_bcv
-
+# API COTIZACIONES
 Crea un archivo json que permite leer la cotizaciones de USD, EUR y CNY directamente de la página del BANCO CENTRAL DE VENEZUELA.
