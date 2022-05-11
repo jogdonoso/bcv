@@ -19,9 +19,9 @@ $posible_cny= substr($posible_cny,34,1000);
 
   
   $cotizaciones = array('cotizacion_bcv' =>
-                        array('USD' => round(str_replace(',','.',substr($posible_usd, -10)),2),
-                              'EUR' => round(str_replace(',','.',substr($posible_eur, -10)),2),
-                              'CNY' => round(str_replace(',','.',substr($posible_cny, -10)),2)
+                        array('USD' => str_replace(',','.',substr($posible_usd, -10)),
+                              'EUR' => str_replace(',','.',substr($posible_eur, -10)),
+                              'CNY' => str_replace(',','.',substr($posible_cny, -10))
                             ));
       
         echo json_encode($cotizaciones);
